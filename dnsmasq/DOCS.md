@@ -24,8 +24,9 @@ Example add-on configuration:
 
 ```yaml
 defaults:
-  - 8.8.8.8
-  - 8.8.4.4
+  - 9.9.9.9
+  - 149.112.112.112
+forward_max: 500
 forwards:
   - domain: mystuff.local
     server: 192.168.1.40
@@ -45,9 +46,14 @@ log_queries: false
 
 The defaults are upstream DNS servers, where DNS requests that can't
 be handled locally, are forwarded to. By default it is configured to have
-Google's public DNS servers: `"8.8.8.8", "8.8.4.4"`.
+Quad9's public DNS servers: `"9.9.9.9", "149.112.112.112"`.
 
 Port can be specified using # separator, eg. `"192.168.1.2#1053"`
+
+### Option: `forward_max` (optional)
+
+This option allows you to define the maximum number of queries forwarded
+to upstream DNS server. Default value is 150.
 
 ### Option: `forwards` (optional)
 
