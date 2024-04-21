@@ -3,6 +3,9 @@ configuration:
   defaults:
     name: Upstream Servers
     description: The defaults are upstream DNS servers.
+  forward_max:
+    name: Maximum forwards
+    description: Maximum number of concurrent DNS queries.
   forwards:
     name: Forwards
     description: >-

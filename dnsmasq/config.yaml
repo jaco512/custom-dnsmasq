@@ -1,9 +1,9 @@
 ---
-version: 1.7.0
+version: 1.7.0-custom
 slug: dnsmasq
-name: Dnsmasq
+name: Dnsmasq Custom
 description: A simple DNS server
-url: https://github.com/home-assistant/addons/tree/master/dnsmasq
+url: https://github.com/jaco512/custom-dnsmasq
 advanced: true
 arch:
   - armhf
@@ -15,8 +15,8 @@ image: homeassistant/{arch}-addon-dnsmasq
 init: false
 options:
   defaults:
-    - 8.8.8.8
-    - 8.8.4.4
+    - 9.9.9.9
+    - 149.112.112.112
   forward-max: 500
   forwards: []
   hosts: []
