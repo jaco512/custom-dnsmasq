@@ -17,6 +17,7 @@ options:
   defaults:
     - 8.8.8.8
     - 8.8.4.4
+  forward-max: 500
   forwards: []
   hosts: []
   services: []
@@ -28,6 +29,7 @@ ports:
 schema:
   defaults:
     - str
+  forward-max: int
   forwards:
     - domain: str
       server: str
