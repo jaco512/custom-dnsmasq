@@ -1,5 +1,5 @@
 ---
-version: 1.7.0-custom
+version: 1.7.0
 slug: dnsmasq
 name: Dnsmasq Custom
 description: A simple DNS server
