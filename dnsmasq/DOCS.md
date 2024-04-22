@@ -50,10 +50,10 @@ Quad9's public DNS servers: `"9.9.9.9", "149.112.112.112"`.
 
 Port can be specified using # separator, eg. `"192.168.1.2#1053"`
 
-### Option: `forward_max` (optional)
+### Option: `forward_max` (mandatory)
 
 This option allows you to define the maximum number of queries forwarded
-to upstream DNS server. Default value is 150.
+to upstream DNS server. Default value is 500.
 
 ### Option: `forwards` (optional)
 
