@@ -17,7 +17,7 @@ options:
   defaults:
     - 9.9.9.9
     - 149.112.112.112
-  forward-max: 500
+  forward_max: 500
   forwards: []
   hosts: []
   services: []
@@ -29,7 +29,7 @@ ports:
 schema:
   defaults:
     - str
-  forward-max: int
+  forward_max: int
   forwards:
     - domain: str
       server: str
